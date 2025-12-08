@@ -2,7 +2,7 @@
 @import url(font.css);
 @import url(reset.css);
 
-body {background: url(../images/background.png); font-family: 'Cafe24ClassicType';}
+body {background: url(../images/background.png); font-family: 'Pretendard';}
 .centerbox {width: 1730px; margin: 0 auto;}
 
 header {}
@@ -12,7 +12,7 @@ header h1 a {}
 header h1 a img {}
 header nav {}
 header nav .gnb {display: flex; gap: 120px;}
-header nav .gnb li {font-size: 25px;}
+header nav .gnb li {font-size: 25px; font-family: 'Cafe24ClassicType';}
 header nav .gnb li a {color: #5B2A1E;}
 
 header .search {width: 50px; }
@@ -26,15 +26,23 @@ header .search a img {}
 .visual .hero_textbox {position: absolute; top: 50%; right: 0; margin-right: 332px; margin-top: -124px;}
 
 
-.btn .off {background: #D65D4A; border-radius: 30px; display: flex; justify-content: center; align-items: center; position: absolute;  z-index: 5;}
-.btn .on {width: 0; background: #FFF8F0; border-radius: 50px; position: absolute;  z-index: 4; overflow: hidden;  transition: 0.5s ease-in-out;}
-.btn:hover .on {width: 245px;}
+.btn .off {background: #D65D4A; border-radius: 30px; display: flex; justify-content: center; align-items: center;   z-index: 5; box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);  position: absolute;}
+.btn .on {background: #FFF8F0; border-radius: 50px;   z-index: 4; overflow: hidden;  transition: 0.5s ease-in-out; box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);  position: absolute;}
+.visual .btn:hover .on {width: 245px;}
 
 
 .visual .btn .off {width: 74px; height: 63px; right: 0; margin-right: 332px; top: 50%; margin-top: 110px;}
-.visual .btn .on { height: 54px; line-height: 54px; padding-left: 35px; box-sizing: border-box; top: 50%; right: 0; margin-right: 336px; margin-top: 114px; font-size: 20px;}
+.visual .btn .on { height: 54px; line-height: 54px; padding-left: 35px; box-sizing: border-box; top: 50%; right: 0; margin-right: 336px; margin-top: 114px; font-size: 20px; width: 0;}
 
 
 
-.section1 {display: flex; align-items: center;}
-.section1 .textbox {}
+.section1 {display: flex; align-items: center; gap: 90px; padding-top: 120px; position: relative;}
+.section1 .textbox {display: flex; flex-direction: column; gap: 30px; }
+.section1 .textbox h3 {font-size: 30px; color: #d65d4a; font-family: 'Cafe24ClassicType';}
+.section1 .textbox p {font-size: 20px; color: #6D6058;}
+.section1 .textbox .btn {}
+.section1 .textbox .btn .off {width: 70px; height: 58px; position: absolute; margin-left: 230px;}
+.section1 .textbox .btn .on {height: 54px; line-height: 54px; padding-left: 20px; box-sizing: border-box; top: 50%; right: 0; margin-right: 470px; margin-top: 170px; font-size: 20px; width: 0;}
+.textbox .btn:hover .on {width: 280px;}
+
+.section2 {padding: 240px 0;}
